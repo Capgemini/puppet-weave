@@ -8,12 +8,12 @@ group :test do
   gem "rspec-puppet", :git => 'https://github.com/rodjek/rspec-puppet.git'
   gem "puppet-syntax"
   gem "puppetlabs_spec_helper"
-  gem "metadata-json-lint"
+  gem "metadata-json-lint", ">= 0.0.6"
 end
 
 group :development do
-  gem "travis"
-  gem "travis-lint"
+  gem "travis", ">= 1.7.5"
+  gem "travis-lint", ">= 2.0.0"
   gem "beaker", :git => 'https://github.com/puppetlabs/beaker.git'
   gem "beaker-rspec"
   gem "puppet-blacksmith"
